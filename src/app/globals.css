@@ -1,33 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
+@layer components {
+    body {
+      @apply font-inter
+    }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    .nav {
+      @apply z-20 fixed w-full max-lg:px-8 px-24 py-4 flex justify-between text-base bg-white text-gray-600 transition duration-75 border-transparent border-b
+    }
+
+    .desc {
+      @apply text-gray-600 text-base mb-3;
+    }
+
+    .desc-sm {
+      @apply text-gray-600 text-sm mb-1;
+    }
+
+    .selected {
+      @apply !border-gray-400
+    }
+
+    .center {
+      @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-0
+    }
   }
-}
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
-}
