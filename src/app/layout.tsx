@@ -21,9 +21,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body>
         <Nav />
-        <main className="flex min-h-screen flex-col px-48 py-24 max-xl:px-24 max-lg:p-8">
+        <main className="flex min-h-screen flex-col align-middle py-24 p-8">
           {children}
         </main>
         <Footer />

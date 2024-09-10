@@ -10,7 +10,7 @@
     }
 
     .nav {
-      @apply z-20 fixed w-full max-lg:px-8 px-24 py-4 flex justify-between text-base bg-white text-gray-600 transition duration-75 border-transparent border-b
+      @apply z-20 fixed w-full px-8 py-4 flex justify-center text-base bg-white text-gray-600 transition duration-75 border-transparent border-b
     }
 
     .desc {

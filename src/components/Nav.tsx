@@ -32,6 +32,7 @@ const Nav = () => {
   return (
     <>
       <nav className={`nav ${showBorder ? "border-gray-200" : ""}`}>
+        <div className="max-w-[1280px] w-full flex justify-between"> 
           <div className="flex max-lg:gap-6 gap-8">
               <Link href="/" className="flex gap-3" onClick={() => isOpen ? toggle() : ""}>
                   <Image className="object-contain border border-alphine-gray rounded-full" src="/icon/alphine.svg" alt="Alphine Logo" width={34} height={34} />
@@ -42,11 +43,12 @@ const Nav = () => {
               <Link className="my-auto hover:underline max-md:hidden" href="/contact">Contact</Link>
               <Link className="my-auto hover:underline max-md:hidden" href="/about">About</Link>
           </div>
-          <div className="flex max-lg:gap-6 gap-8">
+          <div className="flex max-lg:gap-5 gap-8">
             <Link className="my-auto hover:underline max-md:hidden" href="/login">Log In</Link>
             <Link className="my-auto py-1 px-4 text-white rounded-md bg-blue-600 max-md:hidden" href="/quiz/level-test">Get Started for Free</Link>
             <Image className="hidden max-md:block cursor-pointer" src="/icon/hamburger.svg" alt="hamburger menu" width={26} height={26} onClick={toggle}/>
           </div>
+        </div> 
       </nav>
       {
         isOpen ? 

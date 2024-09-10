@@ -57,7 +57,7 @@ export default function LevelTest() {
           </>
         :
         <>
-          <p className="desc">We&apos;ll test you on several words of different levels to measure how good your English vocabulary is. Please select the length of test you prefer:</p>
+          <p className="desc">We&apos;ll test you on several words of different levels to measure how good your English vocabulary is. Please select the test set you prefer:</p>
           <div className="flex flex-row flex-wrap justify-around mt-8 mb-5">
             <button onClick={() => setNumItems(20)} 
                     className={`transition duration-75 w-1/2 max-sm:w-full p-5 border border-transparent rounded-md text-left ${numItems == 20 ? "selected" : ""}`}

@@ -15,7 +15,7 @@ export default function Layout({
   }>) {
     return (
           <section className="py-20 max-w-2xl mx-auto">
-            <h1 className="text-4xl mb-5">📝 Vocabulary Level Test</h1>
+            <h1 className="text-4xl mb-5 font-semibold">📝 Vocabulary Level Test</h1>
             {children}
           </section>
     );
